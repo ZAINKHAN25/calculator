@@ -5,6 +5,7 @@
 }
 
 #body{
+    z-index: -2;
     background-image: linear-gradient(to right,#9d5dd5, #eb8b7d);
     width: 100vw;
     height: 100vh;
@@ -23,15 +24,22 @@
     color: white;
     border-top-right-radius: 2vh;
     border-top-left-radius: 2vh;
-    overflow-x: scroll;
+    /* overflow: hidden; */
+    position: relative;
+    padding-right: 5vw;
 }
 
 #maincontroll{
-    color: #e78699;
-    margin-top: -33vh;
-    margin-right: -100vw;
+    margin-top: -30vh;
+    margin-right: -90vw;
     font-size: 3vh;
-    position: absolute;
+    color: white;
+    z-index: 3;
+    /* color: #e78699;
+    margin-top: -33vh;
+    margin-right: -90vw;
+    font-size: 3vh;
+    position: absolute; */
 }
 
 .upper{
@@ -42,13 +50,82 @@
 }
 
 #mainanswer{
-    position: absolute;
+    /* position: absolute; */
     margin-top: -20vh;
-    margin-right: -110vw;
+    margin-right: -95vw;
     font-size: 3vh;
     color: white;
+    z-index: 3;
 }
 
-#relative{
-    position: relative;
+.btn{
+    width: 13vw;
+    height: 15vh;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-size: 3vh;
+    /* padding: 1vh 1vw; */
 }
+.btn:hover{
+    /* width: 14.5vw; */
+    height: 15vh;
+    background-color: rgb(236, 236, 236);
+    border: none;
+    font-size: 3vh;
+}
+
+#equalsign{
+    height: 15vh;
+    background-color: #e62f89;
+    border: none;
+    font-size: 3vh;
+    /* padding: 1vh 1vw; */
+    width: 30vw !important;
+}
+#equalsign:hover{
+    height: 15vh;
+    background-color: #c42876;
+    border: none;
+    font-size: 3vh;
+    /* padding: 1vh 1vw; */
+    width: 30vw !important;
+}
+
+.andarkasaman{
+    background-color: rgb(0, 0, 0);
+    width: 60vw;
+    height: 50vh;
+    position: absolute;
+    z-index: -1; 
+}   
+
+.maximumColor{
+    background-color: #f6f6f6 !important;
+}
+.maximumColor:hover{
+    background-color: #d3d3d3 !important;
+}
+
+table{
+    background-image: linear-gradient(to right, #f6f6f6, #fcfcfc, white );
+    width: 60vw;
+}
+
+.integers{
+    background-color: #9157e2 !important;
+    color: white;
+}
+.integers:hover{
+    background-color: #7143b0 !important;
+}
+
+.chota{
+    background-color: #f1f1f1 !important;
+}
+.chota:hover{
+    background-color: #d1d1d1 !important;
+}
+
+/* maximum background color f6f6f6 */
+/* integer background color 9157e2 */
+/* maximum se chota background color fcfcfc */
