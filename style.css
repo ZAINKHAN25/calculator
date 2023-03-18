@@ -31,9 +31,9 @@
 
 #maincontroll{
     margin-top: -30vh;
-    margin-right: -90vw;
+    margin-right: -76vw;
     font-size: 3vh;
-    color: white;
+    color: #e78699;
     z-index: 3;
     /* color: #e78699;
     margin-top: -33vh;
@@ -52,8 +52,8 @@
 #mainanswer{
     /* position: absolute; */
     margin-top: -20vh;
-    margin-right: -95vw;
-    font-size: 3vh;
+    margin-right: -80vw;
+    font-size: 6vh;
     color: white;
     z-index: 3;
 }
@@ -80,7 +80,7 @@
     border: none;
     font-size: 3vh;
     /* padding: 1vh 1vw; */
-    width: 30vw !important;
+    width: 15vw !important;
 }
 #equalsign:hover{
     height: 15vh;
@@ -88,7 +88,7 @@
     border: none;
     font-size: 3vh;
     /* padding: 1vh 1vw; */
-    width: 30vw !important;
+    width: 15vw !important;
 }
 
 .andarkasaman{
