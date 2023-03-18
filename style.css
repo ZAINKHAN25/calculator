@@ -27,6 +27,7 @@
     /* overflow: hidden; */
     position: relative;
     padding-right: 5vw;
+    box-shadow: 8px 02px 15px rgba(60, 60, 60, 0.8);
 }
 
 #maincontroll{
@@ -109,6 +110,7 @@
 table{
     background-image: linear-gradient(to right, #f6f6f6, #fcfcfc, white );
     width: 60vw;
+    box-shadow: 8px 10px 18px rgba(0, 0, 0, 0.8);
 }
 
 .integers{
