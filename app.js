@@ -18,10 +18,12 @@ const plus = document.querySelector('#plus').innerHTML;
 const minus = document.querySelector('#minus').innerHTML;
 const dot = document.querySelector('#dot');
 
+// plus.addEventListener('click', () => {
 
+// })
 
 dot.addEventListener('click', () => {
-    maincontroll.textContent = `${maincontroll.textContent + . }`;
+    maincontroll.textContent = `${maincontroll.textContent +  dot.innerHTML}`;
 });
 zero.addEventListener('click', () => {
     maincontroll.textContent = `${maincontroll.textContent + 0 }`;
