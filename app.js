@@ -1,6 +1,6 @@
 // declare area
 var maincontroll = document.querySelector('#maincontroll');
-var mainanswer = document.querySelector('#mainanswer').innerHTML;
+var mainanswer = document.querySelector('#mainanswer');
 const zero = document.querySelector('#zero');
 const one = document.querySelector('#one');
 const two = document.querySelector('#two');
@@ -11,17 +11,29 @@ const six = document.querySelector('#six');
 const seven = document.querySelector('#seven');
 const eight = document.querySelector('#eight');
 const nine = document.querySelector('#nine');
-const equalsign = document.querySelector('#equalsign').innerHTML;
-const multiply = document.querySelector('#multiply').innerHTML;
-const divide = document.querySelector('#divide').innerHTML;
-const plus = document.querySelector('#plus').innerHTML;
-const minus = document.querySelector('#minus').innerHTML;
+const equalsign = document.querySelector('#equalsign');
+const multiply = document.querySelector('#multiply');
+const divide = document.querySelector('#divide');
+const plus = document.querySelector('#plus');
+const minus = document.querySelector('#minus');
 const dot = document.querySelector('#dot');
 
-// plus.addEventListener('click', () => {
+equalsign.addEventListener('click', () => {
+    mainanswer.textContent = `${eval(maincontroll.textContent)}`
+})
 
-// })
-
+divide.addEventListener('click', () => {
+    maincontroll.textContent = `${maincontroll.textContent +  divide.innerHTML}`;
+});
+multiply.addEventListener('click', () => {
+    maincontroll.textContent = `${maincontroll.textContent +  multiply.innerHTML}`;
+});
+minus.addEventListener('click', () => {
+    maincontroll.textContent = `${maincontroll.textContent +  minus.innerHTML}`;
+});
+plus.addEventListener('click', () => {
+    maincontroll.textContent = `${maincontroll.textContent +  plus.innerHTML}`;
+});
 dot.addEventListener('click', () => {
     maincontroll.textContent = `${maincontroll.textContent +  dot.innerHTML}`;
 });
@@ -55,3 +67,12 @@ eight.addEventListener('click', () => {
 nine.addEventListener('click', () => {
     maincontroll.textContent = `${maincontroll.textContent + 9 }`;
 });
+
+function openfunction(){
+    let cover = document.querySelector('#cover');
+    cover.classList.add('open');
+}
+function closefunction(){
+    let cover = document.querySelector('#cover');
+    cover.classList.remove('open');
+}
