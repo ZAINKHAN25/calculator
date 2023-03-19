@@ -16,8 +16,13 @@ const multiply = document.querySelector('#multiply').innerHTML;
 const divide = document.querySelector('#divide').innerHTML;
 const plus = document.querySelector('#plus').innerHTML;
 const minus = document.querySelector('#minus').innerHTML;
-const dot = document.querySelector('#dot').innerHTML;
+const dot = document.querySelector('#dot');
 
+
+
+dot.addEventListener('click', () => {
+    maincontroll.textContent = `${maincontroll.textContent + . }`;
+});
 zero.addEventListener('click', () => {
     maincontroll.textContent = `${maincontroll.textContent + 0 }`;
 });
